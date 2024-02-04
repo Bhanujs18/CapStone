@@ -25,7 +25,7 @@ function Register() {
             <Input type="checkbox"  id="checkbox"/>
             <WhiteText>Share my registration data with Superapp</WhiteText>
             </Label>
-            <Button>Sign Up</Button>
+            <Button>SIGN UP</Button>
           </Inputs>
           </CenterDiv>
           <CenterDiv>

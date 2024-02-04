@@ -72,15 +72,15 @@ justify-content: left;
 width: 100%;
 `
 export const Button = styled.button`
-background-color: #72db73;
+background-color: #148a08;
 border:none;
 width: 100%;
 cursor:pointer;
+-webkit-text-stroke: 0.1px black;
 color: white;
 padding: 0.5rem 0rem;
 font-size: 1.3rem;
-font-weight: 800;
-text-transform: uppercase;
+font-weight: 500;
 border-radius: 15px;
 `
 export const Card = styled.div`
@@ -96,14 +96,14 @@ img{
 export const Cards = styled.div`
 display: flex;
 height: max-content;
-width: 50%;
 margin: 1rem 0rem;
+justify-content:Center;
 flex-wrap: wrap;
 gap: 1rem;
 `
 export const MoviesBox = styled.div`
 display: flex;
-width: 20rem;
+width: 25rem;;
 flex-wrap: wrap;
 justify-content: start;
 
@@ -119,9 +119,19 @@ margin:0rem 0.4rem 0.3rem 0rem;
 padding: 0.3rem 0.6rem;
 border-radius: 9px;
 color: white;
+gap:1rem;
+display: flex;
+align-items:center;
 `
 
 export const BigWhiteText = styled.p`
 color: "white";
-font-size: 2.5rem;
+font-size: 3rem;
+`
+export const Warning = styled.div`
+color: red;
+display: flex;
+margin: 2rem 0rem;
+align-items:center;
+gap: 1rem;
 `
