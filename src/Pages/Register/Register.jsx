@@ -12,7 +12,7 @@ function Register() {
         <InputBox>
           <Heading>Super App</Heading>
           <CenterDiv>
-          <WhiteText>Create your new accont</WhiteText>
+          <p>Create your new accont</p>
           </CenterDiv>
           <CenterDiv>
              <Inputs>

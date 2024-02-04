@@ -1,13 +1,13 @@
 import styled from'styled-components';
-
+import { genre } from './helper/genre';
 export const Wrapper = styled.section`
 height: 50rem;
+background-color: black;
 overflow:hidden;
 `
 export const Container = styled.div`
 width:100%;
 display: flex;
-height: 50rem;
 position: absolute;
 justify-content: center;
 `
@@ -27,9 +27,10 @@ height: 50rem;
 background: black;
 `
 export const Heading = styled.p`,
-width: 100%;
+width: 10%;
 text-align: center;
 color: #72db73;
+display: block;
 font-family: 'Protest Riot', sans-serif;
 font-size: 3rem;
 `
@@ -81,4 +82,46 @@ font-size: 1.3rem;
 font-weight: 800;
 text-transform: uppercase;
 border-radius: 15px;
+`
+export const Card = styled.div`
+width: 9rem;
+padding: 1rem;
+border-radius: 15px;
+img{
+    width: 9rem;
+    border-radius: 15px;
+    height: 7rem;
+}
+`
+export const Cards = styled.div`
+display: flex;
+height: max-content;
+width: 50%;
+margin: 1rem 0rem;
+flex-wrap: wrap;
+gap: 1rem;
+`
+export const MoviesBox = styled.div`
+display: flex;
+width: 20rem;
+flex-wrap: wrap;
+justify-content: start;
+
+`
+
+export const FreeSection = styled.div`
+display: flex;
+justify-content: space-between;
+`
+export const Genre = styled.p`
+background-color: #148a08;
+margin:0rem 0.4rem 0.3rem 0rem;
+padding: 0.3rem 0.6rem;
+border-radius: 9px;
+color: white;
+`
+
+export const BigWhiteText = styled.p`
+color: "white";
+font-size: 2.5rem;
 `
