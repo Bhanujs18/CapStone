@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Heading, Wrapper , Card, FreeSection, Cards, MoviesBox, Genre, BigWhiteText, Warning, Button } from '../../style'
 import { genre } from '../../helper/genre'
+import { useNavigate } from 'react-router-dom';
 
 function Movies() {
 
   const [movies,setMovies] = useState([]);
   const [error,setError] = useState(true);
+
+const navigate = useNavigate();
 
   const remove = (name) => {
     setMovies((prev)=> prev.filter((cur)=>cur !== name))
@@ -57,7 +60,7 @@ function Movies() {
         </Cards>
         <div style={{ display:'flex' , justifyContent:'end'}}>
           {error ? <></> : 
-        <Button style={{width:'9rem' , fontSize:'1rem' , margin: "1.5rem"}}>Next Page</Button> }
+        <Button style={{width:'9rem' , fontSize:'1rem' , margin: "1.5rem"}} onClick={()=>navigate("../info")}>Next Page</Button> }
         </div>
         </div>
 
