@@ -25,6 +25,7 @@ const navigate = useNavigate();
 
   useEffect(()=>{
   movies.length < 3 ?  setError(true) : setError(false);
+  window.localStorage.setItem("movies" , JSON.stringify(movies));
   },[movies])
 
   return (

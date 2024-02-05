@@ -135,3 +135,9 @@ margin: 2rem 0rem;
 align-items:center;
 gap: 1rem;
 `
+
+export const userImage = styled.img`
+width: 4rem;
+height: 8rem;
+border-radius: 15px;
+`
